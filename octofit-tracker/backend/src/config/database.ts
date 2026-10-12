@@ -8,3 +8,4 @@ export async function connectDatabase(): Promise<void> {
 }
 
 export default mongoose.connection;
+
