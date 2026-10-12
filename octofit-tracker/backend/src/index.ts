@@ -10,7 +10,7 @@ const apiBaseUrl = codespaceName
   : 'http://localhost:8000';
 
 app.use(express.json());
-app.use('/api', apiRouter);
+app.use(apiRouter);
 
 app.get('/api/health', (_request, response) => {
   response.json({ status: 'ok', service: 'octofit-api', apiBaseUrl });
